@@ -22,7 +22,7 @@ if user_input:
     with st.spinner("GPT가 답변을 작성 중입니다..."):
         try:
             response = client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-3.5-turbo",
                 messages=st.session_state.messages
             )
             reply = response.choices[0].message.content
