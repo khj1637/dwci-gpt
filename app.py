@@ -28,10 +28,10 @@ misc_data = sheet.worksheet("misc_cases").get_all_records()
 
 # ✅ Streamlit 설정
 st.set_page_config(page_title="동원건설 지식순환 GPT", layout="centered")
-st.title("🏗️ 동원건설 지식순환 GPT")
+st.title("지식공유 GPT")
 
 # ✅ 사용자 입력
-user_input = st.chat_input("지식순환 시스템에 궁금한 점을 입력하세요.")
+user_input = st.chat_input("하자, VE, 민원 등 궁금한 점을 입력하세요.")
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
