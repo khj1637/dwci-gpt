@@ -42,7 +42,7 @@ st.markdown(
 
 st.markdown(
     """
-    <h1 style='text-align: center;'>지식공유 GPT</h1>
+    <h1 style='text-align: center;'>Knowledge Sharing GPT</h1>
     <div style='height: 20px;'></div>  <!-- 공백 한 줄 -->
     <p style='text-align: left; font-size: 0.85rem; color: #555;'>
         버전: v1.0.0<br>
