@@ -5,7 +5,7 @@ from openai import OpenAI
 import json
 
 # ✅ OpenAI 클라이언트 초기화
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+client = OpenAI(api_key=st.secrets["OPENAI"]["OPENAI_API_KEY"])
 
 # ✅ Google Sheets 인증
 SCOPES = [
