@@ -12,8 +12,8 @@ SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive",
 ]
-credentials = Credentials.from_service_account_info(
-    st.secrets["gcp_service_account"], scopes=SCOPES
+CREDS = Credentials.from_service_account_info(
+    st.secrets["GCP_SERVICE_ACCOUNT"], scopes=SCOPES
 )
 gc = gspread.authorize(credentials)
 
