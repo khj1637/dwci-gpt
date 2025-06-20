@@ -15,7 +15,7 @@ SCOPES = [
 CREDS = Credentials.from_service_account_info(
     st.secrets["GCP_SERVICE_ACCOUNT"], scopes=SCOPES
 )
-gc = gspread.authorize(credentials)
+gc = gspread.authorize(CREDS)
 
 # ✅ 시트 열기
 sheet_url = "https://docs.google.com/spreadsheets/d/1tHgvGiAttA21K_zdqEJXoMjwi9eGhO3NEyXzZOVRIhM"
